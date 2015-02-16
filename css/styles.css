@@ -2,12 +2,12 @@
   display: none;
 }
 
-.contact {
+.link {
   cursor: pointer;
   color: #0088cc;
 }
 
-.contact:hover {
+.link:hover {
   text-decoration: underline;
 }
 
