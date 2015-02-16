@@ -7,12 +7,11 @@ $(function(){
     var inputtedAddress = $("input#new-address").val();
     var newContact = {firstName: inputtedFirstName, lastName: inputtedLastName, address: inputtedAddress };
 
-    $("ul#contact-list").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
+    $("ul#contact-list").append("<li><i class='fa-li fa fa-home'></i><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
 
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
     $("input#new-address").val("");
-
 
     $(".contact").last().click(function() {
       $("#show-contact").show();
@@ -22,6 +21,11 @@ $(function(){
       $(".address").text(newContact.address);
     });
 
+    $("ul#contact-list li").click(function() {
+      $("ul#contact-list li").removeClass("highlight");
+      $(this).addClass("highlight", "swing");
+
+    });
 
   });
 });

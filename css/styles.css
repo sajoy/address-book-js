@@ -2,8 +2,6 @@
   display: none;
 }
 
-
-
 .contact {
   cursor: pointer;
   color: #0088cc;
@@ -11,4 +9,12 @@
 
 .contact:hover {
   text-decoration: underline;
+}
+
+.plain {
+  background-color: none;
+}
+
+.highlight {
+  background-color: #ADD8E6;
 }
