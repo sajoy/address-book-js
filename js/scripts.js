@@ -7,7 +7,7 @@ $(function(){
     var inputtedAddress = $("input#new-address").val();
     var newContact = {firstName: inputtedFirstName, lastName: inputtedLastName, address: inputtedAddress };
 
-    $("ul#contact-list").append("<li><i class='fa-li fa fa-home'></i><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
+    $("ul#contact-list").append("<li><i class='fa-li fa fa-home'></i><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span><p>Add to Favorites?<input type='checkbox' class='favorite' value='Favorite's List?'></p></li>");
 
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
@@ -24,8 +24,15 @@ $(function(){
     $("ul#contact-list li").click(function() {
       $("ul#contact-list li").removeClass("highlight");
       $(this).addClass("highlight", "swing");
-
     });
 
+    $("input.favorite").last().on("click", function() {
+      var thisCheck = $(this);
+      if (thisCheck.is(':checked')) {
+      $("ul#favorite-list").append("<li class=" + newContact.firstName + "><i class='fa-li fa fa-home'></i>" + newContact.firstName + "</li>");
+    } else {
+      $("ul#favorite-list").children("li." + newContact.firstName).remove();
+    }
+    });
   });
 });
