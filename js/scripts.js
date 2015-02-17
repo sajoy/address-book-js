@@ -1,4 +1,5 @@
 $(function(){
+
   $('#styleMe input[type="text"]').blur(function(){
     if($(this).val().length > 0){
       $(this).addClass('white');

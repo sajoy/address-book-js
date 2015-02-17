@@ -28,7 +28,7 @@
   box-sizing: border-box; }
 
   body {
-    background-color: #031634;
+    background-color: #fff;
   }
 
   .middle {
@@ -38,14 +38,14 @@
     @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
     h1 {
       margin: 50px 0 0 0;
-      color: #fff;
+      color: #000;
       font-family: 'Bad Script', cursive;
       font-size: 48px;
       font-weight: normal;
       text-align: center; }
       h2 {
         margin: 50px 0 0 0;
-        color: #fff;
+        color: #000;
         font-family: 'Bad Script', cursive;
         font-size: 32px;
         font-weight: normal;
@@ -53,7 +53,7 @@
 
         h5 {
           margin: 50px 0 0 0;
-          color: #fff;
+          color: #000;
           font-family: 'Bad Script', cursive;
           font-size: 25px;
           font-weight: normal;
@@ -86,7 +86,7 @@
                   z-index: 1;
                   font-family: 'Bad Script', cursive;
                   font-size: 22px;
-                  color: #fff;
+                  color: #000;
                   text-indent: 10px;
                   transition: 0.3s;
                   -webkit-transition: 0.3s;
@@ -121,9 +121,9 @@
                         height: 40px;
                         padding: 0 10px;
                         border: 0;
-                        border-bottom: 3px solid #fff;
+                        border-bottom: 3px solid #000;
                         background-color: transparent;
-                        color: #fff;
+                        color: #000;
                         font-family: 'Bad Script', cursive;
                         font-size: 22px;
                         position: relative;
@@ -131,7 +131,7 @@
                         #styleMe input:focus {
                           outline: 0; }
                           #styleMe input.white {
-                            background-color: #031634;
+                            background-color: #fff;
                           }
                           #styleMe input:focus + span span {
                             cursor: initial;
@@ -153,7 +153,7 @@
                                   line-height: 50px;
                                   margin: 0 0 50px 0;
                                   background-color: #56F9CB;
-                                  color: #031634;
+                                  color: #fff;
                                   font-family: 'Bad Script', cursive;
                                   font-size: 22px;
                                   text-decoration: none;
