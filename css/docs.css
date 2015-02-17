@@ -4,6 +4,7 @@ body{
 	margin:0;
 	padding:0;
 	overflow:hidden;
+	font: 'Bad Script', cursive;
 }
 
 #canvas{
@@ -47,7 +48,7 @@ body{
 }
 
 .sample-docs .hard{
-	/*background-image:url();*/
+	font: 'Bad Script', cursive;
 }
 
 .sample-docs .p2{
@@ -153,7 +154,7 @@ body{
 	-webkit-border-image: url(../pics/tab-off.png) 5 20 5 20 repeat stretch;
 	border-width: 5px 20px 5px 20px;
 	display:inline-block;
-	font:bold 11px arial;
+	font:bold 11px 'Bad Script', cursive;
 	text-shadow:1px 1px 0 #ddd;
 	color:#333;
 	line-height:12px;
